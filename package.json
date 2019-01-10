@@ -1,0 +1,25 @@
+{
+  "name": "cowboymeetspirate",
+  "version": "0.0.1",
+  "description": "Website for Canadian Rock band Cowboy Meets Pirate",
+  "main": "index.js",
+  "repository": "https://github.com/tomkonidas/cowboymeetspirate.git",
+  "author": "Tom Konidas <tomkonidas@protonmail.ch>",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "natives": "^1.1.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

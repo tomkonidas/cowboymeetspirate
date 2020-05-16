@@ -16,6 +16,7 @@ const TEAM_MEMBERS_QUERY = graphql`
           frontmatter {
             slug
             name
+            emoji
           }
         }
       }
@@ -28,7 +29,13 @@ const Team = () => {
 
   return (
     <>
-      <section>
+      <section
+        style={{
+          display: `flex`,
+          justifyContent: `space-between`,
+          alignItems: `center`,
+        }}
+      >
         {data.allMarkdownRemark.edges.map(edge => (
           <div key={edge.node.frontmatter.slug}>
             <Link to={`/team${edge.node.frontmatter.slug}`}>

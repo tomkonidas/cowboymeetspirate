@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import cmpLogo from "../images/cmp.png"
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -22,8 +24,18 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
+            display: "flex",
+            alignItems: "center",
           }}
         >
+          <img
+            style={{
+              width: "128px",
+              marginBottom: "0",
+            }}
+            src={cmpLogo}
+            alt="Cowboy Meets Pirate Logo"
+          />
           {siteTitle}
         </Link>
       </h1>

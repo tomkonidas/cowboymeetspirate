@@ -24,15 +24,15 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
-            display: "flex",
-            alignItems: "center",
+            display: `flex`,
+            alignItems: `center`,
           }}
         >
           <img
             style={{
-              width: "64px",
-              marginBottom: "0",
-              marginRight: "1rem",
+              width: `64px`,
+              marginBottom: `0`,
+              marginRight: `1rem`,
             }}
             src={cmpLogo}
             alt="Cowboy Meets Pirate Logo"

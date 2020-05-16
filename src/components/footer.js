@@ -3,10 +3,28 @@ import React from "react"
 import cmpLogo from "../images/cmp.png"
 
 const Footer = ({ siteTitle }) => (
-  <footer>
-    © {new Date().getFullYear()}, Built with
-    {` `}
-    <a href="https://www.gatsbyjs.org">Gatsby</a>
+  <footer
+    style={{
+      display: "flex",
+      flexDirection: "column",
+    }}
+  >
+    <div
+      style={{
+        textAlign: "center",
+      }}
+    >
+      © {new Date().getFullYear()} {siteTitle}
+    </div>
+    <img
+      style={{
+        width: "128px",
+        margin: "auto",
+        marginTop: "1rem",
+      }}
+      src={cmpLogo}
+      alt="Cowboy Meets Pirate Logo"
+    />
   </footer>
 )
 

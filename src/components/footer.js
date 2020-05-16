@@ -18,7 +18,7 @@ const Footer = ({ siteTitle }) => (
     </div>
     <img
       style={{
-        width: "128px",
+        width: "64px",
         margin: "auto",
         marginTop: "1rem",
       }}

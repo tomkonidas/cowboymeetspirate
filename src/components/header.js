@@ -30,8 +30,9 @@ const Header = ({ siteTitle }) => (
         >
           <img
             style={{
-              width: "128px",
+              width: "64px",
               marginBottom: "0",
+              marginRight: "1rem",
             }}
             src={cmpLogo}
             alt="Cowboy Meets Pirate Logo"

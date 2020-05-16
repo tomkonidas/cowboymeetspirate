@@ -7,7 +7,7 @@ oneLiner: "Anyone for tennis?"
 position: "Shredder"
 intro: "Betcha can't play this!"
 description: "Pitchfork edison bulb twee authentic paleo irony VHS sriracha post-ironic seitan truffaut subway tile kombucha woke. Meditation chicharrones small batch direct trade celiac taiyaki subway tile gentrify franzen salvia vice tilde occupy master cleanse squid. Helvetica af messenger bag synth man braid +1, single-origin coffee pickled taiyaki freegan godard venmo hot chicken. Intelligentsia fingerstache godard mixtape, humblebrag cray cardigan tumblr photo booth. Ennui subway tile poke man braid vape pok pok. Skateboard lomo gastropub hashtag godard, seitan tattooed."
-fun_facts:
+funFacts:
   - hella
   - fixie
   - tilde

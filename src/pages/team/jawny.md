@@ -7,7 +7,7 @@ oneLiner: "Duck season!"
 position: "Frontman"
 intro: "Hey! I'm Jawwwwwny!"
 description: "Put a bird on it street art woke edison bulb forage ugh DIY raw denim meggings post-ironic. Everyday carry bicycle rights portland kitsch viral hexagon gochujang. IPhone air plant drinking vinegar sriracha waistcoat affogato pabst glossier master cleanse. Next level chambray VHS church-key keytar kinfolk asymmetrical tacos microdosing, iceland subway tile marfa. Normcore green juice tilde salvia man bun."
-fun_facts:
+funFacts:
   - hella
   - fixie
   - tilde

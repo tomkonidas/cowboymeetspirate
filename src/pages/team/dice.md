@@ -7,7 +7,7 @@ oneLiner: "Rabbit season!"
 position: "Lead Bassist"
 intro: "Yo its Dice!"
 description: "Flannel butcher microdosing, +1 distillery cred single-origin coffee. Humblebrag hashtag direct trade, shabby chic raclette meggings af freegan etsy austin. Gentrify pitchfork selvage four dollar toast air plant. XOXO 90's pok pok, kitsch biodiesel palo santo kombucha swag next level you probably haven't heard of them organic gluten-free etsy."
-fun_facts:
+funFacts:
   - lyft
   - juice
   - vice

@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Team from "../components/team"
 import SEO from "../components/seo"
 
 const About = () => (
@@ -19,6 +20,7 @@ const About = () => (
         bag dreamcatcher succulents tattooed vegan everyday carry woke.
       </p>
     </div>
+    <Team />
   </Layout>
 )
 

@@ -1,5 +1,6 @@
 ---
 slug: "/aaron"
+order: 4
 emoji: "🤖"
 name: "A-Aron"
 oneLiner: "When I say whoa, I mean whoa!"

@@ -1,5 +1,6 @@
 ---
 slug: "/jawny"
+order: 1
 emoji: "🏴‍☠️"
 name: "Capt'n Jawny Sparkles"
 oneLiner: "Duck season!"

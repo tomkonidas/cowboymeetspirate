@@ -1,5 +1,6 @@
 ---
 slug: "/mic"
+order: 3
 emoji: "💪"
 name: "Mic"
 oneLiner: "Anyone for tennis?"

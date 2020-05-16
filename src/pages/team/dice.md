@@ -1,5 +1,6 @@
 ---
 slug: "/dice"
+order: 2
 emoji: "🎲"
 name: "Dice Haze"
 oneLiner: "Rabbit season!"

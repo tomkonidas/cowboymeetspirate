@@ -6,33 +6,35 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
-const Team = () => {
-  const data = useStaticQuery(graphql`
-    query TeamMembers {
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              slug
-              name
-              emoji
-            }
+const TEAM_MEMBERS_QUERY = graphql`
+  query TeamMembers {
+    allMarkdownRemark(sort: { fields: [frontmatter___order] }) {
+      edges {
+        node {
+          frontmatter {
+            slug
+            name
           }
         }
       }
     }
-  `)
+  }
+`
+
+const Team = () => {
+  const data = useStaticQuery(TEAM_MEMBERS_QUERY)
 
   return (
     <>
       <section>
-        <h3>The Fam Jam!</h3>
         {data.allMarkdownRemark.edges.map(edge => (
-          <p>
-            {edge.node.frontmatter.emoji} {edge.node.frontmatter.name}
-          </p>
+          <div key={edge.node.frontmatter.slug}>
+            <Link to={`/team${edge.node.frontmatter.slug}`}>
+              {edge.node.frontmatter.emoji} {edge.node.frontmatter.name}
+            </Link>
+          </div>
         ))}
       </section>
     </>

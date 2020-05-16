@@ -12,7 +12,6 @@ fun_facts:
   - vice
   - kitsch
 socials:
-  - studio
   - facebook
   - instagram
 ---

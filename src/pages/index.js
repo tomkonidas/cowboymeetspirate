@@ -19,11 +19,42 @@ const SocialWrapper = styled.section`
   margin-bottom: 2rem;
 `
 
+const CMP = styled.h1`
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+`
+const Slogan = styled.h2`
+  font-size: 2rem;
+  margin-bottom: 2rem;
+`
+
+const Banner = styled.div`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+`
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Wrapper>
-      <Img fluid={data.file.childImageSharp.fluid} alt="Cowboy Meets Pirate" />
+      <Banner>
+        <CMP>Cowboy Meets Pirate</CMP>
+        <Slogan>
+          <span role="img" aria-label="skull and crossbones">
+            ☠
+          </span>{" "}
+          Montreal Hard Rock{" "}
+          <span role="img" aria-label="skull and crossbones">
+            🏴‍☠️
+          </span>
+        </Slogan>
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="Cowboy Meets Pirate"
+        />
+      </Banner>
       <SocialWrapper>
         <Socials />
         <MailChimp />

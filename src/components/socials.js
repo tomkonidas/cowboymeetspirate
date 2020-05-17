@@ -6,11 +6,13 @@ import instagram from "../images/socials/instagram.svg"
 import facebook from "../images/socials/facebook.svg"
 import youtube from "../images/socials/youtube.svg"
 import twitter from "../images/socials/twitter.svg"
+import tiktok from "../images/socials/tiktok.svg"
 
 const SocialList = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 `
 const SocialWrapper = styled.div`
   margin-top: 1rem;
@@ -41,6 +43,9 @@ const Socials = () => (
       </Social>
       <Social href="https://open.spotify.com/artist/2tgiYwxtLjrqv5CzzM7sy8?si=5tC5mjlITVaHEVNE34_YPw">
         <SocialIcon src={facebook} />
+      </Social>
+      <Social href="https://vm.tiktok.com/THrRE6/">
+        <SocialIcon src={tiktok} />
       </Social>
       <Social href="https://open.spotify.com/artist/2tgiYwxtLjrqv5CzzM7sy8?si=5tC5mjlITVaHEVNE34_YPw">
         <SocialIcon src={youtube} />

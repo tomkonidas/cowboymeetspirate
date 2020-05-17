@@ -17,7 +17,7 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   a {
-    color: white;
+    color: ${props => props.theme.colors.main};
     text-decoration: none;
     padding: 5px;
   }

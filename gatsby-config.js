@@ -55,6 +55,13 @@ module.exports = {
         // Add any options here
       },
     },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://cowboymeetspirate.us18.list-manage.com/subscribe/post?u=daac69aa6cf6fd0b5c14a12f4&amp;id=936644b732", // add your MC list endpoint here; see instructions below
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

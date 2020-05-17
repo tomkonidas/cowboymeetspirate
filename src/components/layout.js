@@ -8,13 +8,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Styled from "styled-components"
+import styled from "styled-components"
 
 import Header from "./header"
 import Footer from "./footer"
-import "./layout.css"
+// import "./layout.css"
 
-const MainLayout = Styled.main`
+const MainLayout = styled.main`
   margin: 0 auto;
   max-width: 960px;
   padding: 1.2rem;

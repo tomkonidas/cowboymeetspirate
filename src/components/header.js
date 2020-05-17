@@ -1,15 +1,15 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Styled from "styled-components"
+import styled from "styled-components"
 
 import cmpLogo from "../images/cmp.png"
 
-const HeaderWrapper = Styled.header`
+const HeaderWrapper = styled.header`
   background: var(--pop);
   margin-bottom: 1.45rem;
 `
-const HeaderContainer = Styled.div`
+const HeaderContainer = styled.div`
   margin: 0 auto;
   max-width: 960px;
   padding: 1.2rem;
@@ -19,7 +19,7 @@ const HeaderContainer = Styled.div`
   a {
     color: white;
     text-decoration: none;
-    padding: 5px; 
+    padding: 5px;
   }
 `
 

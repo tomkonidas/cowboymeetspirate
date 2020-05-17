@@ -19,8 +19,8 @@ const About = () => (
         adaptogen mustache air plant flexitarian street art enamel pin messenger
         bag dreamcatcher succulents tattooed vegan everyday carry woke.
       </p>
+      <Team />
     </div>
-    <Team />
   </Layout>
 )
 

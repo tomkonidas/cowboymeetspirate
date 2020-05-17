@@ -1,3 +1,12 @@
+:root {
+  --gold: #ac6408;
+  --tan: #cac0a4;
+  --black: #1b1515;
+  --slate: #93a4a8;
+  --dirt: #7d715f;
+  --pop: #931624;
+  --pop-2: rebeccapurple;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -218,7 +227,6 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 h1 {
   margin-left: 0;

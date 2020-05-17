@@ -1,23 +1,31 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Styled from "styled-components"
 
 import cmpLogo from "../images/cmp.png"
 
+const HeaderWrapper = Styled.header`
+  background: var(--pop);
+  margin-bottom: 1.45rem;
+`
+const HeaderContainer = Styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 5px; 
+  }
+`
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+  <HeaderWrapper>
+    <HeaderContainer>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -40,8 +48,12 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
-  </header>
+      <div>
+        <Link to="/about/">About</Link>
+        <Link to="/contact/">Contact</Link>
+      </div>
+    </HeaderContainer>
+  </HeaderWrapper>
 )
 
 Header.propTypes = {

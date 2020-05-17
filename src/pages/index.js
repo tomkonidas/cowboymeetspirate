@@ -1,29 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
+import Img from "gatsby-image"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import cmpBand from "../images/cmp-band.jpg"
-
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
     <div>
-      <img
-        style={{
-          width: `100%`,
-        }}
-        src={cmpBand}
-        alt="Cowboy Meets Pirate"
-      />
+      <Img fluid={data.file.childImageSharp.fluid} />
     </div>
-    <Link to="/about/">About</Link>
-    <Link to="/contact/">Contact</Link>
   </Layout>
 )
+
+export const query = graphql`
+  query Band {
+    file(relativePath: { regex: "/cmp-band/" }) {
+      size
+      name
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

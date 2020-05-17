@@ -20,6 +20,10 @@ const Member = ({ data }) => {
         />
         <p>{data.markdownRemark.frontmatter.funFacts}</p>
         <p>{data.markdownRemark.frontmatter.socials}</p>
+        <img
+          src={data.markdownRemark.frontmatter.photo}
+          alt={data.markdownRemark.frontmatter.name}
+        />
       </Layout>
     </>
   )
@@ -38,6 +42,7 @@ export const query = graphql`
         description
         funFacts
         socials
+        photo
       }
     }
   }

@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     *::before,
     *::after{box-sizing:border-box;}
     html {height: 100%;}
-    a{text-decoration:none; color:inherit; cursor:pointer;}
+    a{text-decoration:none; color:inherit; cursor:pointer;font-weight: 700;}
     button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
     figure{margin:0;}
     input::-moz-focus-inner {border:0; padding:0; margin:0;}

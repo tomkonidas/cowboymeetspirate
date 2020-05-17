@@ -4,13 +4,14 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Wrapper } from "../components/styled/index"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <div>
-      <Img fluid={data.file.childImageSharp.fluid} />
-    </div>
+    <Wrapper>
+      <Img fluid={data.file.childImageSharp.fluid} alt="Cowboy Meets Pirate" />
+    </Wrapper>
   </Layout>
 )
 
@@ -20,7 +21,7 @@ export const query = graphql`
       size
       name
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid
         }
       }

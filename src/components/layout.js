@@ -12,8 +12,6 @@ import Theme from "../theme/theme"
 
 const MainLayout = styled.main`
   margin: 0 auto;
-  max-width: 960px;
-  padding: 1.2rem;
 `
 
 const Layout = ({ children }) => {

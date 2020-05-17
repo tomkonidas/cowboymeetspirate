@@ -6,7 +6,7 @@ import styled from "styled-components"
 import cmpLogo from "../images/cmp.png"
 
 const HeaderWrapper = styled.header`
-  background: var(--pop);
+  background: ${({ theme }) => theme.colors.main};
   margin-bottom: 1.45rem;
 `
 const HeaderContainer = styled.div`
@@ -17,7 +17,7 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   a {
-    color: ${({ theme }) => theme.colors.main};
+    color: #fff;
     text-decoration: none;
     padding: 5px;
   }

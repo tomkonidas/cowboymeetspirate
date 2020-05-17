@@ -1,6 +1,6 @@
 export default {
   colors: {
-    main: "#ff1b02",
+    main: `#ff1b02`,
   },
   screens: {
     sm: `(min-width: 640px)`,

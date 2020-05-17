@@ -25,6 +25,15 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.3;
         color: #222;
     }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 1.125rem;
+    }
 `
 
 export default GlobalStyle

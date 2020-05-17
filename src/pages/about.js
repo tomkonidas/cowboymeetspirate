@@ -3,11 +3,12 @@ import React from "react"
 import Layout from "../components/layout"
 import Team from "../components/team"
 import SEO from "../components/seo"
+import { Wrapper } from "../components/styled/index"
 
 const About = () => (
   <Layout>
     <SEO title="Meet The Team" />
-    <div>
+    <Wrapper>
       <h1>About</h1>
       <h2>Montreal Hard Rock</h2>
       <p>
@@ -20,7 +21,7 @@ const About = () => (
         bag dreamcatcher succulents tattooed vegan everyday carry woke.
       </p>
       <Team />
-    </div>
+    </Wrapper>
   </Layout>
 )
 

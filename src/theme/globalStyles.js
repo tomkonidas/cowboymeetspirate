@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     fieldset{border-width:0; padding:0; margin:0;}
 
     body{
+        height: 100%;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
         font-size: 16px;
         font-weight: 400;

@@ -2,11 +2,12 @@ import React from "react"
 
 import cmpLogo from "../images/cmp.png"
 
-const Footer = ({ siteTitle }) => (
+const Footer = () => (
   <footer
     style={{
       display: `flex`,
       flexDirection: `column`,
+      bottom: "0",
     }}
   >
     <div
@@ -14,7 +15,7 @@ const Footer = ({ siteTitle }) => (
         textAlign: `center`,
       }}
     >
-      © {new Date().getFullYear()} {siteTitle}
+      © {new Date().getFullYear()} Cowboy Meets Pirate
     </div>
     <img
       style={{

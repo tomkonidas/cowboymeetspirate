@@ -2,11 +2,12 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Wrapper } from "../components/styled/index"
 
 const Contact = () => (
   <Layout>
     <SEO title="Get In Touch" />
-    <div>
+    <Wrapper>
       <h1>Get in touch</h1>
       <h2>Follow us on ALL TO SOCIALS</h2>
       <p>
@@ -18,7 +19,7 @@ const Contact = () => (
         adaptogen mustache air plant flexitarian street art enamel pin messenger
         bag dreamcatcher succulents tattooed vegan everyday carry woke.
       </p>
-    </div>
+    </Wrapper>
   </Layout>
 )
 

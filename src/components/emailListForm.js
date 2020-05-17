@@ -3,29 +3,53 @@ import addToMailchimp from "gatsby-plugin-mailchimp"
 import styled from "styled-components"
 
 const EmailListWrapper = styled.div`
+  width: 100%;
+  display: flex;
   form {
     display: flex;
+    flex-direction: column;
+    width: 100%;
   }
   input {
     color: #2a2a2a;
     border: none;
+    margin-bottom: 0.5rem;
+    width: 100%;
   }
 
   button,
   input {
     padding: 1rem 1.5rem;
   }
-  input[type="email"] {
-    width: 300px;
+  input[type="email"]:focus {
+    outline-color: ${({ theme }) => theme.colors.accent};
+    box-shadow: 0 0 6px ${({ theme }) => theme.colors.accent};
   }
   input[type="submit"] {
     transition: all 0.1s linear;
-    background-color: ${({ theme }) => theme.colors.main};
-    color: white;
+    font-weight: bolder;
+    background-color: ${({ theme }) => theme.colors.pop};
 
     &:hover {
-      background-color: ${({ theme }) => theme.colors.mainDark};
+      filter: brightness(90%);
       cursor: pointer;
+    }
+  }
+
+  @media ${({ theme }) => theme.screens.md} {
+    form {
+      flex-direction: row;
+    }
+    input {
+      width: auto;
+    }
+    input[type="submit"] {
+      margin-right: auto;
+    }
+    input[type="email"] {
+      margin-left: auto;
+      width: 300px;
+      z-index: 100;
     }
   }
 `

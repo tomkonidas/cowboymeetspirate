@@ -3,6 +3,8 @@ export default {
     main: `#ff1b02`,
     mainDark: `#c20000`,
     mainLight: `#ff6138`,
+    pop: `#FCDC15`,
+    accent: `#76E5F2`,
   },
   screens: {
     sm: `(min-width: 640px)`,

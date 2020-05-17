@@ -3,14 +3,11 @@ import { createGlobalStyle } from "styled-components"
 import "normalize.css"
 
 const GlobalStyle = createGlobalStyle`
-    html {
-        height: 100%;
-        font-size: 1px;
-    }
 
     *,
     *::before,
     *::after{box-sizing:border-box;}
+    html {height: 100%;}
     a{text-decoration:none; color:inherit; cursor:pointer;}
     button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
     figure{margin:0;}

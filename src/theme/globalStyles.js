@@ -28,6 +28,6 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.3;
         color: #222;
     }
-
-
 `
+
+export default GlobalStyle

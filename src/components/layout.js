@@ -13,6 +13,7 @@ import styled from "styled-components"
 import Header from "./header"
 import Footer from "./footer"
 // import "./layout.css"
+import GlobalStyles from "../theme/globalStyles"
 
 const MainLayout = styled.main`
   margin: 0 auto;
@@ -33,6 +34,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalStyles />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <MainLayout>

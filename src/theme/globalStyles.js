@@ -13,14 +13,14 @@ const GlobalStyle = createGlobalStyle`
     figure{margin:0;}
     input::-moz-focus-inner {border:0; padding:0; margin:0;}
     ul, ol, dd{margin:0; padding:0; list-style:none;}
-    h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
+    h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;font-family: 'biorhyme'}
     p{margin:0;}
     cite {font-style:normal;}
     fieldset{border-width:0; padding:0; margin:0;}
 
     body{
         height: 100%;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'space-mono',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.3;

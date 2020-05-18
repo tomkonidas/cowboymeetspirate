@@ -15,8 +15,7 @@ const SocialList = styled.div`
   flex-wrap: wrap;
 `
 const SocialWrapper = styled.div`
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem 0;
 `
 
 const SocialIcon = styled.img`

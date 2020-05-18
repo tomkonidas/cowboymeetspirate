@@ -5,7 +5,20 @@ import styled from "styled-components"
 const EmailListWrapper = styled.div`
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: ${({ theme }) => theme.colors.pop};
+  max-width: ${({ theme }) => theme.container.sm};
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: center;
+  }
   form {
+    padding: 2.3rem;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -22,34 +35,18 @@ const EmailListWrapper = styled.div`
     padding: 1rem 1.5rem;
   }
   input[type="email"]:focus {
-    outline-color: ${({ theme }) => theme.colors.accent};
-    box-shadow: 0 0 6px ${({ theme }) => theme.colors.accent};
+    outline-color: ${({ theme }) => theme.colors.pop};
+    box-shadow: 0 0 6px ${({ theme }) => theme.colors.pop};
   }
   input[type="submit"] {
     transition: all 0.1s linear;
     font-weight: bolder;
-    background-color: ${({ theme }) => theme.colors.pop};
+    background-color: black;
+    color: white;
 
     &:hover {
       filter: brightness(90%);
       cursor: pointer;
-    }
-  }
-
-  @media ${({ theme }) => theme.screens.md} {
-    form {
-      flex-direction: row;
-    }
-    input {
-      width: auto;
-    }
-    input[type="submit"] {
-      margin-right: auto;
-    }
-    input[type="email"] {
-      margin-left: auto;
-      width: 300px;
-      z-index: 100;
     }
   }
 `
@@ -87,6 +84,7 @@ export default class IndexPage extends React.Component {
     return (
       <EmailListWrapper>
         <form onSubmit={this._handleSubmit}>
+          <h2>Join our Email List</h2>
           <input
             type="email"
             onChange={this._handleChange}

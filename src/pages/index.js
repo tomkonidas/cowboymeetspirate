@@ -20,13 +20,32 @@ const SocialWrapper = styled.section`
 `
 
 const CMP = styled.h1`
-  font-size: 4.5rem;
+  padding: 1rem;
+  font-size: 2rem;
   font-weight: 900;
   margin-bottom: 1.2rem;
+  font-family: "Streamster";
+
+  @media ${({ theme }) => theme.screens.md} {
+    font-size: 4rem;
+  }
+  @media ${({ theme }) => theme.screens.lg} {
+    font-size: 6rem;
+  }
+  @media ${({ theme }) => theme.screens.xl} {
+    font-size: 7rem;
+  }
 `
 const Slogan = styled.h2`
-  font-size: 2rem;
   margin-bottom: 2rem;
+  font-size: 0.785rem;
+  color: #222;
+  @media ${({ theme }) => theme.screens.md} {
+    font-size: 1rem;
+  }
+  @media ${({ theme }) => theme.screens.lg} {
+    font-size: 2rem;
+  }
 `
 
 const Banner = styled.div`

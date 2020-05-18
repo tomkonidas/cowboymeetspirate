@@ -35,6 +35,14 @@ const GlobalStyle = createGlobalStyle`
     h3 {
         font-size: 1.125rem;
     }
+
+    @font-face {
+        font-family: "Streamster";
+        src: url("../../static/fonts/Streamster.woff2")   format("woff2");
+    }
+    ::selection {
+        background: #FCDC15; 
+    }
 `
 
 export default GlobalStyle

@@ -50,6 +50,7 @@ const Yellow = styled.section`
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.pop};
   align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
 
   @media ${({ theme }) => theme.screens.md} {
     flex-direction: row;

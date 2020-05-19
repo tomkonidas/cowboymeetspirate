@@ -6,6 +6,7 @@ import styled from "styled-components"
 import MailChimp from "../components/emailListForm"
 import Socials from "../components/socials"
 import logo from "../images/cmp.png"
+import gold from "../images/cowboy_meets_pirate_gold.jpeg"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -21,22 +22,10 @@ const SocialWrapper = styled.section`
   margin: 2rem 0;
 `
 
-const CMP = styled.h1`
+const CMP = styled.div`
   padding: 1rem;
-  font-size: 2rem;
-  font-weight: 900;
+  background-color: #000;
   margin-bottom: 1.2rem;
-  font-family: "Streamster";
-
-  @media ${({ theme }) => theme.screens.md} {
-    font-size: 4rem;
-  }
-  @media ${({ theme }) => theme.screens.lg} {
-    font-size: 6rem;
-  }
-  @media ${({ theme }) => theme.screens.xl} {
-    font-size: 7rem;
-  }
 `
 const Slogan = styled.h2`
   margin-bottom: 2rem;
@@ -72,9 +61,19 @@ const Yellow = styled.section`
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
+    <CMP>
+      <Wrapper>
+        <img
+          src={gold}
+          alt="Cowboy Meets Pirate"
+          style={{
+            width: `100%`,
+          }}
+        />
+      </Wrapper>
+    </CMP>
     <Wrapper>
       <Banner>
-        <CMP>Cowboy Meets Pirate</CMP>
         <Slogan>
           <span role="img" aria-label="skull and crossbones">
             ☠

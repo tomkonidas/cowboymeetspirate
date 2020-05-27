@@ -35,6 +35,12 @@ const Layout = ({ children }) => {
           content="https://cowboymeetspirate.com/og-cmp.jpg"
         />
         <meta property="og:description" content="Montreal Hard Rock" />
+        <meta property="twitter:title" content="Cowboy Meets Pirate" />
+        <meta
+          property="twitter:image"
+          content="https://cowboymeetspirate.com/og-cmp.jpg"
+        />
+        <meta property="twitter:description" content="Montreal Hard Rock" />
       </Helmet>
       <GlobalStyles />
       <Header siteTitle={data.site.siteMetadata.title} />

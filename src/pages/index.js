@@ -61,7 +61,7 @@ const Yellow = styled.section`
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Cowboy Meets Pirate |> Home" />
     <CMP>
       <Wrapper>
         <img

@@ -30,6 +30,7 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={Theme}>
       <Helmet>
         <meta property="og:title" content="Cowboy Meets Pirate" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:image"
           content="https://cowboymeetspirate.com/og-cmp.jpg"

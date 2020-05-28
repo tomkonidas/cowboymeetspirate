@@ -1,10 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import { ThemeProvider } from "styled-components"
 import styled from "styled-components"
 
-import Header from "./header"
 import Footer from "./footer"
 
 import GlobalStyles from "../theme/globalStyles"
@@ -16,16 +14,6 @@ const MainLayout = styled.main`
 `
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <ThemeProvider theme={Theme}>
       <Helmet>
@@ -44,7 +32,7 @@ const Layout = ({ children }) => {
         <meta property="twitter:description" content="Montreal Hard Rock" />
       </Helmet>
       <GlobalStyles />
-      <Header siteTitle={data.site.siteMetadata.title} />
+
       <MainLayout>{children}</MainLayout>
       <Footer />
     </ThemeProvider>

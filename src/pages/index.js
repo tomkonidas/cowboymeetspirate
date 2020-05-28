@@ -107,7 +107,7 @@ const IndexPage = ({ data }) => (
             src={logo}
             alt="Cowboy Meets Pirate Logo"
             style={{
-              padding: `7rem`,
+              padding: `3rem`,
               width: `100%`,
               height: `auto`,
             }}

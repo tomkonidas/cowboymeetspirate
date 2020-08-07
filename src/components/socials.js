@@ -37,19 +37,19 @@ const Socials = () => (
       <Social href="https://open.spotify.com/artist/2tgiYwxtLjrqv5CzzM7sy8?si=5tC5mjlITVaHEVNE34_YPw">
         <SocialIcon src={spotify} />
       </Social>
-      <Social href="https://open.spotify.com/artist/2tgiYwxtLjrqv5CzzM7sy8?si=5tC5mjlITVaHEVNE34_YPw">
+      <Social href="https://www.instagram.com/cowboymeetspirate/">
         <SocialIcon src={instagram} />
       </Social>
-      <Social href="https://open.spotify.com/artist/2tgiYwxtLjrqv5CzzM7sy8?si=5tC5mjlITVaHEVNE34_YPw">
+      <Social href="https://www.facebook.com/CowboyMeetsPirateBand">
         <SocialIcon src={facebook} />
       </Social>
       <Social href="https://vm.tiktok.com/THrRE6/">
         <SocialIcon src={tiktok} />
       </Social>
-      <Social href="https://open.spotify.com/artist/2tgiYwxtLjrqv5CzzM7sy8?si=5tC5mjlITVaHEVNE34_YPw">
+      <Social href="https://www.youtube.com/CowboyMeetsPirate">
         <SocialIcon src={youtube} />
       </Social>
-      <Social href="https://open.spotify.com/artist/2tgiYwxtLjrqv5CzzM7sy8?si=5tC5mjlITVaHEVNE34_YPw">
+      <Social href="https://twitter.com/CMPTheBand">
         <SocialIcon src={twitter} />
       </Social>
     </SocialList>
